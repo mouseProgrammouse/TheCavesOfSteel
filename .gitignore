@@ -1,69 +1,27 @@
-# Prerequisites
-*.d
+# Bazel output directories (IMPORTANT)
+bazel-*
+bazel-bin/
+bazel-out/
+bazel-testlogs/
 
-# Compiled Object files
-*.slo
-*.lo
+# Bazel cache (local machine specific)
+.bazel/
+bazel-cache/
+
+# Symlinks Bazel creates in your repo root
+bazel-hello-bazel/   # (or bazel-<your-project-name>)
+bazel-*/
+
+# macOS (since you're on Mac)
+.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Build artifacts (just in case)
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
 *.so
-*.dylib
-*.dll
-*.so.*
-
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
 *.a
-*.lib
-
-# Executables
-*.exe
 *.out
-*.app
-
-# Build directories
-build/
-Build/
-build-*/
-
-# CMake generated files
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-install_manifest.txt
-compile_commands.json
-
-# Temporary files
-*.tmp
-*.log
-*.bak
-*.swp
-
-# vcpkg
-vcpkg_installed/
-
-# debug information files
-*.dwo
-
-# test output & cache
-Testing/
-.cache/
